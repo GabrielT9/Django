@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+	<li><a href="/listnews/">Cancel</a></li>
+</ul>
+
+<p>Descripcion: </p><h1>{{comments.description}}</h1><br>
+<p>Date: </p><h1>{{comments.date}}</h1><br>
+
+<p><b>{{news.description}}</b></p>
+<a href="/deletecomms/{{comments.id}}/">Eliminar</a>
+
+{% endblock %} 

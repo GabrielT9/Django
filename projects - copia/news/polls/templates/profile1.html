@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<p>PROFILE</p>
+
+{% for news in news %}
+<h2>{{news.category}} = {{news.rating}}</h2>
+{% endfor %}
+
+{% endblock %}
+

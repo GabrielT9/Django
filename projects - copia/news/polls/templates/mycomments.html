@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+	<li><a href="/listnews/">Cancel</a></li>
+</ul>
+
+{% for my_comments in my_comments %}
+<h2><a href="/detailmycomms/{{my_comments.id}}">{{my_comments}}</a></h2>
+{% endfor %}
+
+{% endblock %}

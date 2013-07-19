@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+	<li><a href="/listnews/">Cancel</a></li>
+</ul>
+
+<h1>{{news.title}}</h1><br>
+<p>Rating: </p><h1>{{news.rating}}</h1><br>
+<p>Category: </p><h1>{{news.category}}</h1><br>
+
+<p><b>{{news.description}}</b></p>
+<a href="/deletenews/{{news.id}}/">Eliminar</a>
+<a href="/comment/{{news.id}}/">Comentar</a>
+<a href="/mycomments/{{news.id}}/">Mis Comentarios</a>
+<a href="/listcomments/{{news.id}}/">Ver Comentarios</a>
+
+
+{% endblock %} 

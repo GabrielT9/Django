@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+	<li><a href="/listnews/">Cancel</a></li>
+</ul>
+
+{% for comments in comments %}
+<h2>{{comments}}</h2>
+{% endfor %}
+
+{% endblock %} 

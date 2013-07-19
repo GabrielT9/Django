@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+	<li><a href="/profile/">Cancel</a></li>
+	<li><a href="/news/">Create</a></li>
+</ul>
+
+<h1>My News</h1>
+
+{% for my_news in my_news %}
+<h2><a href="/detailmynews/{{my_news.id}}">{{my_news.title}}</a></h2>
+{% endfor %}
+
+{% endblock %} 
